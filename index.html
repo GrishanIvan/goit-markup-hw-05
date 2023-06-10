@@ -38,7 +38,7 @@
 	 <section class="hero">
 	 <div class="container">
 	  <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button type="button" class="button" >Order Service</button>
+        <button class="button" data-modal-open>Order Service</button>
       </div>
 	  </section>
 	  
@@ -81,6 +81,7 @@
             <p class="principles-content">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
           </li>
         </ul>
+		
 		</div>
 	  </section>
 	  <section class="section services">
@@ -204,27 +205,27 @@
 	<div class="container">
 	<h2 class="clients-title">Customers<h2>
 	<ul class="clients-list">
-	<li class="clients-item"><a href="#" class="clients-ya">
+	<li class="clients-item"><a href="#" class="clients-icon">
 	<svg class="icon-client-ya" width="104" height="56">
 		<use href="./css/images/sprite/icons.svg#icon-client-ya"></use>
 	</svg></a></li>
-	<li class="clients-item"><a href="#" class="clients-mens">
+	<li class="clients-item"><a href="#" class="clients-icon">
 	<svg class="icon-client-mens" width="104" height="56">
 		<use href="./css/images/sprite/icons.svg#icon-client-mens"></use>
 	</svg></a></li>
-	<li class="clients-item"><a href="#" class="clients-company">
+	<li class="clients-item"><a href="#" class="clients-icon">
 	<svg class="icon-client-company" width="104" height="56">
 		<use href="./css/images/sprite/icons.svg#icon-client-company"></use>
 	</svg></a></li>
-	<li class="clients-item"><a href="#" class="clients-foster">
+	<li class="clients-item"><a href="#" class="clients-icon">
 	<svg class="icon-client-foster" width="104" height="56">
 		<use href="./css/images/sprite/icons.svg#icon-client-foster" ></use>
 	</svg></a></li>
-	<li class="clients-item"><a href="#" class="clients-brand">
+	<li class="clients-item"><a href="#" class="clients-icon">
 	<svg class="icon-client-brand" width="104" height="56">
 		<use href="./css/images/sprite/icons.svg#icon-client-brand"></use>
 	</svg></a></li>
-	<li class="clients-item"><a href="#" class="clients-tag">
+	<li class="clients-item"><a href="#" class="clients-icon">
 	<svg class="icon-client-tag" width="104" height="56">
 		<use href="./css/images/sprite/icons.svg#icon-client-tag" ></use>
 	</svg></a></li>
@@ -242,7 +243,7 @@
 	 </div>
 	
      <div class="networks">
-	  <p class="networks-title">Social media</p>
+	  <h2 class="networks-title">Social media</h2>
 	  <ul class="networks-icons">
 	  <li class="networks-item"><a href="#" class="networks-icon">
 	  <svg class="icon-instagram-footer" width="24" height="24">
@@ -264,6 +265,15 @@
 	 </div>	
      </div>	 
 	 </footer>
-	 
+	 <div class="backdrop is-hidden" data-modal>
+	  <div class="modal">
+	  <button class="modal-button" data-modal-close>
+	  <svg class="icon-close" width="8" height="8">
+		<use href="./css/images/sprite/icons.svg#icon-close"></use>
+	  </svg>
+	  </button>
+	  </div>
+	   </div>
+	 <script src="./js/modal.js"></script>
   </body>
 </html>
